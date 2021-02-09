@@ -5,7 +5,7 @@ function function2(){
     console.log(prompt("Wat is je naam?"));
 }
 function function3(){
-    let Antwoord = confirm()
+    let Antwoord = confirm("Je antwoorden staan in de console!")
     if (Antwoord == true){
         console.log("Ok")
     }
