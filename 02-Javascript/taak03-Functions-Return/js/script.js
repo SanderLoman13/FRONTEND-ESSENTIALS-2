@@ -1,9 +1,14 @@
 function geefRandomGetalTerug(){
-    let randomGetal = Math.random();                
-    randomGetal = randomGetal *100 + 1;             
-    randomGetal = Math.floor(randomGetal);          
-    return randomGetal;            
-    
+    return randomGetal = Math.floor(Math.random()*10 + 1);            
 }
 
-console.log(geefRandomGetalTerug());    
+console.log(geefRandomGetalTerug());
+console.log(geefRandomGetalTerug()); 
+console.log(geefRandomGetalTerug());
+console.log(geefRandomGetalTerug());
+console.log(geefRandomGetalTerug());
+console.log(geefRandomGetalTerug());
+console.log(geefRandomGetalTerug());
+console.log(geefRandomGetalTerug());
+console.log(geefRandomGetalTerug());
+console.log(geefRandomGetalTerug());
