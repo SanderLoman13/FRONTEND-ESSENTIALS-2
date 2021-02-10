@@ -9,6 +9,12 @@ function maakGroen(){
 }
 
 //TODO: maak 2 functies genaamd maakBlauw en maakRood
+function maakBlauw(){
+    document.querySelector("body").style.backgroundColor = "blue";
+}
+function maakRood(){
+    document.querySelector("body").style.backgroundColor = "Red";
+}
 
 
 function veranderKleur(kleur){
