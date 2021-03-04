@@ -1,4 +1,4 @@
-let score = 0;
+var score = 0;
 let getal1;
 let getal2;
 
@@ -18,20 +18,30 @@ function showRandomNumber2(){
 }
 
 function geefAntwoord(antwoord){
-    let score = 0;
+    var score = 0;
     getal1 = document.querySelector(".getal1").innerHTML;
     getal2 = document.querySelector(".getal2").innerHTML;
     score = document.querySelector(".score").innerHTML;
-    alert("x" + score + "x");
     if (getal1 > getal2 && antwoord == 'hoger'){
-       alert("goed");
-       parseInt(score = score + 1);
+       score = score -1 + 2;
        document.querySelector(".score").innerHTML = score;
+       document.querySelector("body").style.backgroundColor = "green";
     }
-    if (getal1 < getal2 && antwoord == 'lager'){
-        alert("ook goed");
-        parseInt(score = score + 1);
+    else if (getal1 < getal2 && antwoord == 'lager'){
+        score = score -1 + 2;
         document.querySelector(".score").innerHTML = score;
+        document.querySelector("body").style.backgroundColor = "green";
+    }  
+    if (getal1 > getal2 && antwoord == 'lager'){
+        score = score -1;
+        document.querySelector(".score").innerHTML = score;
+        document.querySelector("body").style.backgroundColor = "red";
+    }
+
+    else if (getal1 < getal2 && antwoord == 'hoger'){
+        score = score -1;
+        document.querySelector(".score").innerHTML = score;
+        document.querySelector("body").style.backgroundColor = "red";
     }
     showRandomNumber1();
     showRandomNumber2();
